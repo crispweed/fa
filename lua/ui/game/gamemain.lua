@@ -280,6 +280,7 @@ local function LoadDialog(parent)
     local text = '::  ' .. LOC('<LOC LOAD_0000>IN TRANSIT') .. '  ::'
     local textControl = UIUtil.CreateText(movie, text, 20, UIUtil.bodyFont)
     textControl:SetColor(color)
+    textControl:SetDropShadow(true)
     LayoutHelpers.AtCenterIn(textControl, parent, 200)
     import('/lua/maui/effecthelpers.lua').Pulse(textControl, 1, 0, .8)
 
